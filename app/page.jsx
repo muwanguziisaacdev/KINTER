@@ -366,7 +366,7 @@ export default function Home() {
           <div>
             <div className="news-item">
             <Image 
-              src={'/assets/blog/blog-01.jpg-'}
+              src={'/assets/blog/blog-01.jpg'}
               width={400}
               height={200}
               alt="why chidren need a healthy environment "
