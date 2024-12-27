@@ -7,8 +7,8 @@ import { faTwitter, faDribbble, faBehance, faInstagram, faFacebook, faGooglePlus
 const Footer = () => {
   return (
     <div className=''>
-        <div className="footer-wrap pb-20 ">
-            <div className="top-wrapper">
+        <div className="footer-wrap pb-20 px-4">
+            <div className="top-wrapper block md:flex flex-wrap text-white justify-evenly  relative pt-5">
                 <div className="telephone contact-item">
                     <div className="telephone-img">
                         <Image 
@@ -58,7 +58,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bottom-wrapper grid grid-cols-3 px-20 py-10 text-white">
+            <div className="bottom-wrapper grid md:grid-cols-3 md:px-20 py-10 text-white">
                 <div className="about">
                     <h3>About Kinter</h3>
                     <p className='max-w-[400px] leading-6'>Monotne deplos copertve chanva andng crorate Qhanin Unique Qnderwhe Premum Convere With Uheng Mutmed Nquel Undehee Mandnge theme Qhann Unqu Qndewhe Premum Converenc With Aheing Mutmeda Nquel Undehele</p>
@@ -114,11 +114,11 @@ const Footer = () => {
             </div>
         </div>
         <div ></div>
-        <div className="author-details flex justify-between py-5 items-center px-10">
-            <h4 className='text-xl'>2024 Kinter Developed by
+        <div className="author-details flex-row-reverse md:flex  justify-center md:justify-between py-5 items-center px-10">
+            <h4 className='md:text-xl py-4'>2024 Kinter Developed by
                 <span className='text-green-500 text-xl px-4'>Muwanguzi Isaac</span>
                  </h4>
-            <div className='author-link-icons w-3/6 justify-evenly'>
+            <div className=' author-link-icons w-3/6 justify-evenly'>
                 <FontAwesomeIcon icon={faFacebook} className='text-white bg-[#3b5999] rounded-full'/>
                 <FontAwesomeIcon icon={faGooglePlus} className='bg-[#dd4b39] '/>
                 <FontAwesomeIcon icon={faTwitter} className='bg-[#55acee]'/>

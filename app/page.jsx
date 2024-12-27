@@ -7,10 +7,10 @@ export default function Home() {
     <>
         <main className="min-h-[100vh] mb-[200px]">
           <div className="slider section-notch text-white">
-            <div className="slider-content flex flex-col flex-nowrap justify-center pl-[100px] gap-5 w-[50%] h-[100%]">
-              <h2 className="flex flex-col text-3xl gap-[15px]">
-                <span className="text-[36px]">A NEW APPROAH TO</span>
-                <span className="font-bold text-6xl kids-edu">Kids Education</span>
+            <div className="slider-content flex flex-col flex-nowrap justify-center md:pl-[100px] gap-5 md:w-[50%] px-5 h-[100%]">
+              <h2 className="flex flex-col gap-[15px]">
+                <span className="md:text-sm text-white text-xl">A NEW APPROAH TO</span>
+                <span className=" font-extrabold md:font-bold text-4xl md:text-6xl kids-edu">Kids Education</span>
               </h2>
               <p className="flex flex-col text-[18px]">
                 <span>The universe is one great kindergarten for man. Everything</span>
@@ -23,14 +23,14 @@ export default function Home() {
             </div>
           </div>
 
-        <section className="welcome flex flex-col justify-center items-center w-[30%] m-auto gap-7 mt-[110px] mb-[60px]">
-          <h2 className="text-gray-800 font-bold text-4xl">Welcome to Our Kinter</h2>
+        <section className="welcome flex flex-col justify-center items-center md:w-[30%] w-4/5 m-auto gap-7 mt-[110px] mb-[60px] text-center">
+          <h2 className="text-gray-800 font-extrabold text-3xl md:text-4xl section-title">Welcome to Our Kinter</h2>
           <p className="flex text-center text-gray-500">
             Here is what you cann expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions!
           </p>
         </section>
 
-        <section className="feature-area  flex justify-evenly mb-[60px]">
+        <section className="feature-area  flex flex-wrap justify-evenly mb-[60px]">
 
             <div className="feature-item">
                 <div className="feature-shape shape-1">
@@ -110,13 +110,13 @@ export default function Home() {
 
         </section>
 
-        <section className="about-area section-bg-one section-notch relative">
+        <section className="about-area section-bg-one section-notch relative py-20 px-10">
           <div className="container w-full flex justify-evenly">
-            <div className="about-content text-white w-[500px] flex flex-col justify-center gap-[15px]">
+            <div className="about-content text-white w-[500px] flex flex-col md:justify-center md:gap-[15px]">
               <div className="section-title">
-                <h2 className="cur-family text-4xl">About Kindergarten School</h2>
+                <h2 className="cur-family text-4xl pb-5">About Kindergarten School</h2>
               </div>
-              <p>
+              <p className="pb-5">
               Enthusastcay deminate competitive oportunities through transparent and action
                                         Compelngly seize andvirschemas through intermandated creative adiea sources
                                         Enthusiasticay plagiarize clientcentered and relationships foovalent experiences
@@ -130,7 +130,7 @@ export default function Home() {
             </div>
             </div>
 
-            <div className="about-image">
+            <div className="about-image hidden md:block">
               <Image 
                  src={"/assets/about/about.png"}
                  width={500}
@@ -145,16 +145,15 @@ export default function Home() {
         {/* class area */}
         <section className="class-area w-screen">
           <div className="container mt-[110px]">
-            <div className="section-content m-auto text-center">
-              <div className="section-title">
+            <div className="section-content m-auto text-center w-screen">
                 <h2 className="text-4xl font-bold mb-10">Our Popular Classes</h2>
-              </div>
-              <p>
+
+              <p className="max-w-[600px] m-auto text-gray-500">
                 Here is what you can expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions
               </p>
             </div>
-            <div className="class-images flex justify-evenly w-screen m-auto mt-[110px] overflow-hidden">
-              <div className="class-item">
+            <div className="class-images flex flex-wrap justify-evenly  m-auto mt-[110px] overflow-hidden">
+              <div className="class-item w-full">
                 <div className="class-img">
                   <img src="/assets/classes/class-1.jpg" alt="Imagination classes" />
                 </div>
@@ -234,7 +233,7 @@ export default function Home() {
 
           {/* Counter area */}
         </section>
-        <section className="counter-area section-notch w-full  h-[600px] mt-[130px] relative flex justify-evenly items-center">
+        <section className="counter-area section-notch w-full  md:h-[600px] mt-[130px] relative flex flex-wrap justify-evenly items-center">
             <div className="single-counter text-white p-[70px] flex flex-col items-center gap-5">
               <Image 
                 src={'/assets/icon/c-icon1.png'}
@@ -293,11 +292,11 @@ export default function Home() {
         </section>
         <section className="gallery-area mt-[110px] text-center">
           <div className="content">
-            <h2 className="text-gray-800 font-bold text-5xl title">Our school gallery</h2>
+            <h2 className="text-gray-900 md:font-bold font-extrabold text-3xl md:text-5xl title">Our school gallery</h2>
             <p className="content-details text-gray-500 text-xl">Here is what you can expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions!</p>
           </div>
           <div className="gallery">
-            <ul className="gallery-list flex flex-nowrap justify-evenly text-xl  w-[50%] m-auto mt-[45px]">
+            <ul className="gallery-list flex shrink md:shrink-0 flex-nowrap justify-evenly md:text-xl font-bold  md:w-[50%] m-auto mt-[45px]">
               <li>SEE ALL</li>
               <li>BRANDING</li>
               <li>CREATIVE</li>
@@ -305,7 +304,7 @@ export default function Home() {
               <li>PHOTOSHOP</li>
             </ul>
             </div>
-            <div className="grid grid-cols-3 gap-5 w-4/5 m-auto mt-[45px]">
+            <div className="grid md:grid-cols-3 gap-5 w-4/5 m-auto mt-[45px]">
               <div>
                 <Image 
                   src={'/assets/portfolio/port01.jpg'}
@@ -359,11 +358,11 @@ export default function Home() {
 
         {/* latest news */}
         <section className="news-area section-notch relative h-auto py-20 w-full mt-[110px] text-white">
-          <div className="content text-center">
-            <h2 className="title text-5xl">Our Latest News</h2>
-            <p className="m-auto ">Here is what you can expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions!</p>
+          <div className="content text-center px-4">
+            <h2 className="title text-3xl  md:text-5xl">Our Latest News</h2>
+            <p className="m-auto font-medium">Here is what you can expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions!</p>
           </div>
-          <div className=" mt-[45px] gap-4 flex place-content-center">
+          <div className=" mt-[45px] gap-y-4 flex flex-wrap  m-auto place-content-center">
             <div className="news-item">
             <Image 
               src={'/assets/blog/blog-01.jpg'}

@@ -6,13 +6,13 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <div className='h-[20vh]'>
-        <div className="upper-header bg-[#23cc88] text-white font-semibold flex justify-evenly flex-nowrap h-[7vh] items-center">
-            <div className="contact-details-header flex justify-evenly w-[40%]">
+    <div className=''>
+        <div className="upper-header bg-[#23cc88] text-white font-semibold flex justify-evenly flex-nowrap items-center py-3">
+            <div className="contact-details-header hidden md:flex justify-evenly  w-[40%]">
                 <div className="time-date">9:30am - 6:30pm Mon - Sun</div>
                 <div className="tel">+256709675989</div>
             </div>
-            <div className="brand-icons flex w-[30%] justify-evenly
+            <div className="brand-icons flex md:w-[30%] w-3/6 justify-evenly
                 ">
                     <FontAwesomeIcon icon={faFacebookMessenger} className='fa'/>
                     <FontAwesomeIcon icon={faTwitter} className='fa'/>
@@ -21,7 +21,7 @@ const Header = () => {
                     <FontAwesomeIcon icon={faYoutube} className='fa'/>
                 </div>
         </div>
-        <div className="bottom-header flex justify-evenly items-center flex-1 py-6">
+        <div className="bottom-header flex justify-between px-4 md:justify-evenly items-center flex-1 py-6">
             <div className="logo">
                 <Image 
                     src={'/assets/logo/logo.png'}
@@ -30,7 +30,7 @@ const Header = () => {
                     alt = "Kinter logo"
                 />
             </div>
-            <div className="menu w-[50%]">
+            <div className="menu hidden md:w-[50%]">
                 <ul className="flex justify-evenly font-semibold text-gray-800">
                     <Link href={'/'}>HOME</Link>
                     <Link href={'/'}>ABOUT</Link>
