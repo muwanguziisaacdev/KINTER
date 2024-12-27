@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const page = () => {
+const Staff = () => {
   return (
     <div>
         <div className="slider section-notch text-white">
@@ -106,4 +106,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Staff

@@ -358,3 +358,21 @@
 .teacher-area .teacher-item .teacher-img {
 	@apply  w-[500px] h-[500px] md:w-[300px] md:h-[300px] object-cover m-auto
 }
+.contact-card .fa {
+	@apply w-20 h-20 text-6xl  text-[#00394f] border-none py-4
+}
+.contact-card {
+	@apply flex flex-col justify-between mt-10 md:justify-center items-center shadow-lg w-4/5 md:w-80 h-80 gap-y-5 p-4
+}
+.contact-card h3 {
+	@apply text-[#00394f] font-bold text-2xl mb-5
+}
+.contact-card p {
+	@apply flex flex-col text-gray-500 text-xl
+}
+.contact-form input{
+	@apply p-4 w-4/5 md:w-3/6 m-auto rounded-md border-gray-300 border-2 outline-none;
+}
+.contact-form textarea{
+	@apply p-4  m-auto rounded-md border-gray-300 border-2 outline-none;
+}

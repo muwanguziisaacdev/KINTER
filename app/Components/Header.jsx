@@ -38,7 +38,7 @@ const Header = () => {
                     {/* <Link href={'/'}>CLASSES</Link>
                     <Link href={'/'}>SHOP</Link>
                     <Link href={'/'}>BLOG</Link> */}
-                    <Link href={'/'}>CONTACT</Link>
+                    <Link href={'/contact'}>CONTACT</Link>
                 </ul>
             </div>
             <div className="admission-btn">
