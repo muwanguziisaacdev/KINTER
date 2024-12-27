@@ -148,7 +148,7 @@ export default function Home() {
             <div className="section-content m-auto text-center w-screen">
                 <h2 className="text-4xl font-bold mb-10">Our Popular Classes</h2>
 
-              <p className="max-w-[600px] m-auto text-gray-500">
+              <p className="max-w-[600px] m-auto text-gray-500 px-4">
                 Here is what you can expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions
               </p>
             </div>
@@ -293,10 +293,10 @@ export default function Home() {
         <section className="gallery-area mt-[110px] text-center">
           <div className="content">
             <h2 className="text-gray-900 md:font-bold font-extrabold text-3xl md:text-5xl title">Our school gallery</h2>
-            <p className="content-details text-gray-500 text-xl">Here is what you can expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions!</p>
+            <p className="content-details text-gray-500 text-xl px-4">Here is what you can expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions!</p>
           </div>
           <div className="gallery">
-            <ul className="gallery-list flex shrink md:shrink-0 flex-nowrap justify-evenly md:text-xl font-bold  md:w-[50%] m-auto mt-[45px]">
+            <ul className="gallery-list flex  md:shrink-0 flex-wrap justify-evenly md:text-xl font-bold  md:w-[50%] m-auto mt-[45px] text-sm">
               <li>SEE ALL</li>
               <li>BRANDING</li>
               <li>CREATIVE</li>

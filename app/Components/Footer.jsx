@@ -114,7 +114,7 @@ const Footer = () => {
             </div>
         </div>
         <div ></div>
-        <div className="author-details flex-row-reverse md:flex  justify-center md:justify-between py-5 items-center px-10">
+        <div className="author-details flex-col-reverse md:flex  justify-center md:justify-between py-5 items-center px-10">
             <h4 className='md:text-xl py-4'>2024 Kinter Developed by
                 <span className='text-green-500 text-xl px-4'>Muwanguzi Isaac</span>
                  </h4>

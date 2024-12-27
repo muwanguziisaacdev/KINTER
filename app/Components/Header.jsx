@@ -30,7 +30,7 @@ const Header = () => {
                     alt = "Kinter logo"
                 />
             </div>
-            <div className="menu hidden md:w-[50%]">
+            <div className="menu hidden md:block md:w-[50%]">
                 <ul className="flex justify-evenly font-semibold text-gray-800">
                     <Link href={'/'}>HOME</Link>
                     <Link href={'/'}>ABOUT</Link>
