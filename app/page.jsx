@@ -362,7 +362,7 @@ export default function Home() {
             <h2 className="title text-3xl  md:text-5xl">Our Latest News</h2>
             <p className="m-auto font-medium">Here is what you can expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions!</p>
           </div>
-          <div className=" mt-[45px] gap-y-4 flex flex-wrap  m-auto place-content-center">
+          <div className=" mt-[45px] gap-y-4 md:gap-4 flex flex-wrap  m-auto place-content-center">
             <div className="news-item">
             <Image 
               src={'/assets/blog/blog-01.jpg'}

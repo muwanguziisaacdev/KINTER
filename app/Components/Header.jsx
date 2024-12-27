@@ -33,11 +33,11 @@ const Header = () => {
             <div className="menu hidden md:block md:w-[50%]">
                 <ul className="flex justify-evenly font-semibold text-gray-800">
                     <Link href={'/'}>HOME</Link>
-                    <Link href={'/'}>ABOUT</Link>
-                    <Link href={'/'}>PAGES</Link>
-                    <Link href={'/'}>CLASSES</Link>
+                    <Link href={'/about'}>ABOUT</Link>
+                    <Link href={'/staff'}>STAFF</Link>
+                    {/* <Link href={'/'}>CLASSES</Link>
                     <Link href={'/'}>SHOP</Link>
-                    <Link href={'/'}>BLOG</Link>
+                    <Link href={'/'}>BLOG</Link> */}
                     <Link href={'/'}>CONTACT</Link>
                 </ul>
             </div>

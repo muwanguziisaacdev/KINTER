@@ -45,6 +45,7 @@
 	width: 100%;
 	background-image: url('/assets/slides/slide-01.jpg');
 	background-size: cover;
+	background-position: center;
 	position: relative;
 	z-index: -2;
 }
@@ -343,4 +344,17 @@
 }
 .author-link-icons * {
 	@apply w-10 text-white rounded-full border-none
+}
+
+.teacher-area .teacher-item {
+	@apply text-center py-5 mb-5  md:py-0 md:mb-0;
+}
+.teacher-area .teacher-item h4{
+	@apply text-[#00394f] font-bold text-2xl
+}
+.teacher-area .teacher-item p{
+	@apply text-gray-500 text-xl
+}
+.teacher-area .teacher-item .teacher-img {
+	@apply  w-[500px] h-[500px] md:w-[300px] md:h-[300px] object-cover m-auto
 }
