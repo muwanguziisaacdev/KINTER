@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faCalendar, faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -358,12 +358,12 @@ export default function Home() {
         </section>
 
         {/* latest news */}
-        <section className="news-area section-notch relative h-[600px] w-full mt-[110px] text-white">
+        <section className="news-area section-notch relative h-auto py-20 w-full mt-[110px] text-white">
           <div className="content text-center">
             <h2 className="title text-5xl">Our Latest News</h2>
             <p className="m-auto ">Here is what you can expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions!</p>
           </div>
-          <div>
+          <div className=" mt-[45px] gap-4 flex place-content-center">
             <div className="news-item">
             <Image 
               src={'/assets/blog/blog-01.jpg'}
@@ -371,20 +371,66 @@ export default function Home() {
               height={200}
               alt="why chidren need a healthy environment "
             />
-            <div className="content">
-              <div>
-                <p>by Wasim</p>
-                <p>
-                  <FontAwesomeIcon icon={faCalendar} className="w-5"/>
+            <div className="blog-content">
+              <div className="blog-ul-li">
+              <li >
+                  <FontAwesomeIcon icon={faUser} className="w-4"/>
+                  <span>by Wasim</span>
+                  </li>
+                <li className="flex">
+                  <FontAwesomeIcon icon={faCalendar} className="w-4"/>
                   <span>26th December 2024</span>
-                </p>
+                </li>
               </div>
-              <h3>Why children need a Healthy Environment</h3>
+              <h4>Why children need a Healthy Environment</h4>
+              <p>READ MORE</p>
+            </div>
+            </div>
+            <div className="news-item">
+            <Image 
+              src={'/assets/blog/blog-01.jpg'}
+              width={400}
+              height={200}
+              alt="why chidren need a healthy environment "
+            />
+            <div className="blog-content">
+              <div className="blog-ul-li">
+              <li >
+                  <FontAwesomeIcon icon={faUser} className="w-4"/>
+                  <span>by Wasim</span>
+                  </li>
+                <li className="flex">
+                  <FontAwesomeIcon icon={faCalendar} className="w-4"/>
+                  <span>26th December 2024</span>
+                </li>
+              </div>
+              <h4>Why children need a Healthy Environment</h4>
+              <p>READ MORE</p>
+            </div>
+            </div>
+            <div className="news-item">
+            <Image 
+              src={'/assets/blog/blog-01.jpg'}
+              width={400}
+              height={200}
+              alt="why chidren need a healthy environment "
+            />
+            <div className="blog-content">
+              <div className="blog-ul-li">
+                <li >
+                  <FontAwesomeIcon icon={faUser} className="w-4"/>
+                  <span>by Wasim</span>
+                  </li>
+                <li className="flex">
+                  <FontAwesomeIcon icon={faCalendar} className="w-4"/>
+                  <span>26th December 2024</span>
+                </li>
+              </div>
+              <h4>Why children need a Healthy Environment</h4>
               <p>READ MORE</p>
             </div>
             </div>
           </div>
-
         </section>
         </main>
     </>

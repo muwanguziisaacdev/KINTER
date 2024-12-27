@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/Header";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Footer from "./Components/Footer";
 
 // Disable auto adding of styles
 config.autoAddCss = false;
@@ -27,8 +28,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header/>
-        {children}
+          <Header/>
+          {children}
+          <Footer />
+
       </body>
     </html>
   );

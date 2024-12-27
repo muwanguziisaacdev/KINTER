@@ -250,3 +250,104 @@
 	max-width: 600px;
 	line-height: 30px;
 }
+
+.news-item {
+	@apply bg-white text-gray-800 text-center pb-10;
+}
+.news-item .blog-ul-li {
+	@apply flex  gap-5 justify-center
+}
+.blog-ul-li li {
+	@apply flex gap-2 py-4
+}
+.blog-content h4 {
+	@apply text-2xl max-w-[400px] m-auto font-bold
+}
+.blog-content p:last-child {
+	@apply font-bold text-xl;
+	color: #ff4f58;
+}
+.top-wrapper {
+	@apply flex text-white bg-[#7346e0] justify-evenly  relative ;
+	border-bottom: 1px solid white;
+}
+
+.top-wrapper .contact-item {
+	@apply flex gap-5  items-center px-4 py-10
+}
+.top-wrapper h4 {
+	@apply flex flex-col text-xl
+}
+.top-wrapper h4 span:last-child{
+	@apply font-bold
+}
+
+.top-wrapper .contact-item:first-child::after, .contact-item:nth-child(2)::after {
+	content: '';
+	top: 0;
+	right: 0;
+	width: .2px;
+	height: 100%;
+	background: gray;
+}
+/* Footer */
+.bottom-wrapper .link-icons {
+	@apply flex justify-evenly max-w-[200px] py-4
+}
+.bottom-wrapper .link-icons * {
+	@apply text-xl w-7 font-bold
+}
+
+.footer-wrap	{
+	background-image: url('/assets/bg/footer-bg.jpg');
+	background-size: cover;
+}
+.footer-wrap h3 {
+	@apply text-3xl font-bold pb-[45px] relative mb-10
+}
+.footer-wrap h3::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 10%;
+	height: .1px;
+	background: gray;
+
+}
+
+.bottom-wrapper .blog-list ul li{
+	@apply flex gap-4 pb-5 relative
+
+}
+.bottom-wrapper .blog-list ul li:last-child{
+	@apply mt-5
+
+}
+
+.bottom-wrapper .blog-list ul li::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 30%;
+	height: .1px;
+	background-color: gray;
+}
+.bottom-wrapper .blog-list ul li p {
+	@apply flex flex-col max-w-[250px] font-bold 
+}
+.bottom-wrapper form input {
+	@apply max-w-[400px] py-4 px-6 bg-transparent outline-none mt-5;
+	border: .5px solid gray;
+}
+.bottom-wrapper form input::placeholder {
+	color: white;
+}
+
+.author-link-icons {
+	@apply flex
+}
+.author-link-icons * {
+	@apply w-10 text-white rounded-full border-none
+}
