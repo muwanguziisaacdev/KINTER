@@ -35,9 +35,9 @@ const Header = () => {
                     <Link href={'/'}>HOME</Link>
                     <Link href={'/about'}>ABOUT</Link>
                     <Link href={'/staff'}>STAFF</Link>
-                    {/* <Link href={'/'}>CLASSES</Link>
+                    <Link href={'/'}>CLASSES</Link>
                     <Link href={'/'}>SHOP</Link>
-                    <Link href={'/'}>BLOG</Link> */}
+                    <Link href={'/'}>BLOG</Link>
                     <Link href={'/contact'}>CONTACT</Link>
                 </ul>
             </div>
