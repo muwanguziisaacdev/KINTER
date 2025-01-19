@@ -297,14 +297,14 @@ export default function Home() {
           </div>
           <div className="gallery">
             <ul className="gallery-list flex  md:shrink-0 flex-wrap justify-evenly md:text-xl font-bold  md:w-[50%] m-auto mt-[45px] text-sm">
-              <li>SEE ALL</li>
-              <li>BRANDING</li>
-              <li>CREATIVE</li>
-              <li>ILLUSTRATION</li>
-              <li>PHOTOSHOP</li>
+              <li className="text-[#ffc000]">SEE ALL</li>
+              <li className="text-[#e84b3a]">BRANDING</li>
+              <li className="text-[#fc7f0c]">CREATIVE</li>
+              <li className="text-[#92278f]">ILLUSTRATION</li>
+              <li className="text-[#16b6ef]">PHOTOSHOP</li>
             </ul>
             </div>
-            <div className="grid md:grid-cols-3 gap-5 w-4/5 m-auto mt-[45px]">
+            <div className="gallery-images grid md:grid-cols-3 gap-5 w-4/5 m-auto mt-[45px]">
               <div>
                 <Image 
                   src={'/assets/portfolio/port01.jpg'}

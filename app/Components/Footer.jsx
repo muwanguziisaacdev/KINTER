@@ -21,7 +21,7 @@ const Footer = () => {
                     <div className="">
                         <h4>
                             <span>Give us a call</span>
-                            <span>+256 709675989</span>
+                            <span className='leading-9'>+256 709675989</span>
                         </h4>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ const Footer = () => {
                     <div className="">
                         <h4>
                             <span>Send us a Message</span>
-                            <span>muwanguziisaacuganda@gmail.com</span>
+                            <span className='leading-9'>kinter@info.com</span>
                         </h4>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ const Footer = () => {
                     <div className="">
                         <h4>
                             <span>Visit our location</span>
-                            <span>Namilyango, Seeta Mukono Uganda</span>
+                            <span className='leading-9'>Namilyango, Seeta Mukono Uganda</span>
                         </h4>
                     </div>
                 </div>
@@ -106,9 +106,9 @@ const Footer = () => {
                     <p>Enter you Email and get latest updates offers</p>
                     <p>Subscribe Us</p>
 
-                    <form action="" className='flex flex-col'>
-                        <input type="text" placeholder='Enter your email'/>
-                        <button className='thm-btn thm-btn-2 w-2/5 mt-10'>SUBSCRIBE NOW!</button>
+                    <form action="" className='flex flex-col  justify-center'>
+                        <input type="text" placeholder='Enter your email' className='w-4/5 m-auto'/>
+                        <button className='thm-btn thm-btn-2 w-2/5 mt-10 m-auto'>SUBSCRIBE NOW!</button>
                     </form>
                 </div>
             </div>

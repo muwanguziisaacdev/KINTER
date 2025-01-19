@@ -1,10 +1,13 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import { faFacebookMessenger, faTwitter, faYoutube, faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
-
+import { usePathname } from 'next/navigation'
 const Header = () => {
+    const pathname = usePathname();
   return (
     <div className=''>
         <div className="upper-header bg-[#23cc88] text-white font-semibold flex justify-evenly flex-nowrap items-center py-3">
@@ -32,13 +35,13 @@ const Header = () => {
             </div>
             <div className="menu hidden md:block md:w-[50%]">
                 <ul className="flex justify-evenly font-semibold text-gray-800">
-                    <Link href={'/'}>HOME</Link>
-                    <Link href={'/about'}>ABOUT</Link>
-                    <Link href={'/staff'}>STAFF</Link>
-                    <Link href={'/'}>CLASSES</Link>
-                    <Link href={'/'}>SHOP</Link>
-                    <Link href={'/'}>BLOG</Link>
-                    <Link href={'/contact'}>CONTACT</Link>
+                    <Link href={'/'} className={pathname==='/' ? 'active' : ''}>HOME</Link>
+                    <Link href={'/about'} className={pathname==='/about' ? 'active' : ''}>ABOUT</Link>
+                    <Link href={'/staff'} className={pathname==='/staff' ? 'active' : ''}>STAFF</Link>
+                    <Link href={'/classes'} className={pathname==='/classes' ? 'active' : ''}>CLASSES</Link>
+                    <Link href={'/shop'} className={pathname==='/shop' ? 'active' : ''}>SHOP</Link>
+                    <Link href={'/blog'} className={pathname==='/blog' ? 'active' : ''}>BLOG</Link>
+                    <Link href={'/contact'} className={pathname==='/contact' ? 'active' : ''}>CONTACT</Link>
                 </ul>
             </div>
             <div className="admission-btn">
