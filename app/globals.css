@@ -11,9 +11,22 @@
 	min-height: 100vh;
 	overflow-x: hidden;
 }
-.section-title {
-	font-family: cursive;
+
+
+/* REUSEABLE  CODE*/
+
+.section {
+	@apply flex flex-col justify-center items-center md:w-[30%] w-4/5 m-auto gap-7 mt-[110px] mb-[60px] text-center;
 }
+
+.section h2 {
+	@apply text-gray-800 font-extrabold text-3xl md:text-4xl font-[cursive]
+}
+.section p {
+	@apply flex text-center text-gray-500;
+}
+
+
 .fa {
 	@apply h-[30px] border-r-[.5px]
 }

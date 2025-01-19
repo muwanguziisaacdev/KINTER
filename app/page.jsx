@@ -25,8 +25,8 @@ export default function Home() {
 
         <section className="welcome flex flex-col justify-center items-center md:w-[30%] w-4/5 m-auto gap-7 mt-[110px] mb-[60px] text-center">
           <h2 className="text-gray-800 font-extrabold text-3xl md:text-4xl section-title">Welcome to Our Kinter</h2>
-          <p className="flex text-center text-gray-500">
-            Here is what you cann expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions!
+          <p className="">
+            Here is what you cannot expect from a house cleaning from a Handy professional. Download the app to share further cleaning details and instructions!
           </p>
         </section>
 
@@ -110,7 +110,7 @@ export default function Home() {
 
         </section>
 
-        <section className="about-area section-bg-one section-notch relative py-20 px-10">
+        <section className=" about-area section-bg-one section-notch relative py-20 px-10">
           <div className="container w-full flex justify-evenly">
             <div className="about-content text-white w-[500px] flex flex-col md:justify-center md:gap-[15px]">
               <div className="section-title">
@@ -143,9 +143,9 @@ export default function Home() {
         </section>
 
         {/* class area */}
-        <section className="class-area w-screen">
-          <div className="container mt-[110px]">
-            <div className="section-content m-auto text-center w-screen">
+        <section className="flex justify-center">
+          <div className="container mt-[110px] ">
+            <div className="section-content  m-auto text-center">
                 <h2 className="text-4xl font-bold mb-10">Our Popular Classes</h2>
 
               <p className="max-w-[600px] m-auto text-gray-500 px-4">
@@ -226,7 +226,7 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className="button-container flex justify-center w-screen">
+            <div className="button-container flex justify-center w-full">
             <button className="thm-btn thm-btn-2 mt-20">SEE MORE CLASSES</button>
             </div>
           </div>
